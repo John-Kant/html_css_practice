@@ -3,10 +3,12 @@ body {
   border: 8px solid black;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  /* flex-wrap: wrap;
   align-content: center;
+ */
 }
 
 .box {
@@ -17,4 +19,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-shrink: 1; */
+  /* flex-grow: 1;
+  max-width: 300px; */
+
+  flex-shrink: 1;
+  min-width: 100px;
+}
+
+.box-1 {
+  margin-right: auto;
+}
+
+@media (max-width: 575px) {
+  body {
+    flex-wrap: wrap;
+  }
 }
